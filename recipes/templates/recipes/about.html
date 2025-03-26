@@ -1,0 +1,33 @@
+<style>
+    body {
+        background-image: url('https://img.freepik.com/free-photo/ingredients-bolognese-spaghetti-frame_23-2148551753.jpg?uid=R145122853&ga=GA1.1.1124189367.1712236700&semt=ais_hybrid'); /* Замените на URL вашего изображения */
+        background-size: cover; /* Заполнение фона */
+        background-position: center; /* Центрирование изображения */
+        font-family: 'Arial', sans-serif; /* Изменение шрифта */
+        color: #000; /* Цвет текста - черный */
+        display: flex; /* Используем flexbox для центрирования */
+        flex-direction: column; /* Вертикальное направление */
+        justify-content: center; /* Центрирование по вертикали */
+        align-items: center; /* Центрирование по горизонтали */
+        height: 100vh; /* Высота на весь экран */
+        margin: 0; /* Убираем отступы */
+    }
+
+    h1 {
+        text-align: center; /* Центрирование заголовка */
+        margin: 20px 0; /* Отступы сверху и снизу */
+        font-size: 3em; /* Увеличение размера шрифта заголовка */
+    }
+
+    p {
+        text-align: center; /* Центрирование текста параграфа */
+        margin: 20px; /* Отступы для параграфа */
+        line-height: 1.6; /* Высота строки для лучшей читаемости */
+        font-size: 1.4em; /* Увеличение размера шрифта параграфа */
+    }
+</style>
+
+<h1>{{ title }}</h1>
+<p>{{ page_obj|safe }}</p>
+<a href="{% url 'home' %}"><h2>На главную страницу сайта</h2></a>
+
