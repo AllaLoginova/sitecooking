@@ -28,7 +28,7 @@ class Recipes(models.Model):
         PUBLISHED = 1, 'Опубликовано'
 
 
-    title = models.CharField(max_length=255, verbose_name='Заголовок')
+    title = models.CharField(max_length=256, verbose_name='Заголовок')
     slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name='Slug')
 
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', default=None, blank=True, null=True, verbose_name='Фото')
