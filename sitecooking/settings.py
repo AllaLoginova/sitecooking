@@ -26,14 +26,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xmk_6p5+-s^8gc2-+(^3zg#z-tykf79@#5ntze=q1si#x55nmj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
-# ALLOWED_HOSTS = ['django-cook-logal.na4u.ru', 'www.django-cook-logal.na4u.ru']
+ALLOWED_HOSTS = ['django-cook-logal.na4u.ru', 'www.django-cook-logal.na4u.ru']
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
-INTERNAL_IPS = ["127.0.0.1"]
+# ALLOWED_HOSTS = ['127.0.0.1']
+# INTERNAL_IPS = ["127.0.0.1"]
 
 
 # Application definition
